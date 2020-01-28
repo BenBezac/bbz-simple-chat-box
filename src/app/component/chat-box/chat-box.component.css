@@ -1,0 +1,25 @@
+.chat-box {
+  width: 300px;
+  border: 2px solid grey;
+  padding: 5px;
+}
+
+.chat-box .msg {
+  background-color: lightgreen;
+  width: 240px;
+  max-width: 240px;
+  word-wrap: break-word;
+  min-height: 25px;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  position: relative;
+  -webkit-box-shadow: 2px 2px 4px #888;
+  -moz-box-shadow: 2px 2px 4px #888;
+  box-shadow: 2px 2px 4px #888;
+}
+
+.chat-box .msg-self {
+  margin-left: 50px;
+  background-color: lightskyblue;
+}

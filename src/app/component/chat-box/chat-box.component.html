@@ -1,0 +1,14 @@
+<h1>Welcome {{ pseudo }}</h1>
+<div class="chat-box">
+  <div *ngFor="let message of messages" 
+    [ngClass]="{'msg': true, 'msg-self': message.author == pseudo}" 
+    title="{{ message.text }}"
+  >
+    <b>{{ message.author }} : </b>
+    {{ message.text }}
+  </div>
+  <div>
+    <input type="text" name="text" [(ngModel)]="messageInputValue" />
+    <button type="button" (click)="addMessage()">Message</button>
+  </div>
+</div>
