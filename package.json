@@ -49,5 +49,7 @@
   },
   "engines": {
     "node": "12.13.0"
+  }"architect":{
+  "tsConfig": "apps/bbz-simple-chat-box/tsconfig.app.json",
   }
 }
